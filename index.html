@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+<style>
+#snowflakeContainer{
+	height:98vh;
+	overflow:hidden;
+}
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.nhietdo{
+	position: absolute;
+    top: 130px;
+    right: 65px;
+	font-family: 'Orbitron', sans-serif;
+	color: #fff;
+    text-shadow: 2px 2px 4px #70ddeb;
+}
+</style>
+<script>
+var _speed = 100;
+var numberOfSnowflakes = 100;
+function speedF(num){
+	_speed = num * 100;
+	numberOfSnowflakes = num * 100;
+	var time = parseFloat(0.5/num);
+	var nd = -18/num;
+	jQuery(".maylanh").css({"animation":"tilt-shaking "+time+"s linear infinite"});
+	jQuery(".nhietdo").css({"animation":"tilt-shaking "+time+"s linear infinite"});
+	jQuery(".nhietdo").text(nd);
+}
+</script>
+</head>
+<body>
+
+<div id='snowflakeContainer'>
+	<div style="margin:0 auto; width:450px;position: relative;">
+		<img class="maylanh" src="https://aniclub.pro/maylanh/maylanh.png">
+		<span class="nhietdo">20</span>
+		<div style="margin:0 auto;text-align:center">
+			<button onclick="speedF(1)" >Lạnh</button>
+			<button onclick="speedF(2)">Cực Lạnh</button>
+			<button onclick="speedF(3)">Vé rỳ Lạnh</button>
+		</div>
+	</div>
+	<p class='snowflake'>❄</p>
+</div>
+
+<script src="script.js?v=1"></script>
+</body>
+</html>
