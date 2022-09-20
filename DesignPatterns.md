@@ -1,6 +1,7 @@
 # Design Patterns
 Creational Patterns
 <span style="color:blue">some *blue* text</span>
+<span style="color:red">some **This is Red Bold.** text</span>
 
 Abstract Factory	Creates an instance of several families of classes
 Builder			Separates object construction from its representation
