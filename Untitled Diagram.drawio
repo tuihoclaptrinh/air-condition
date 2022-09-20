@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-20T02:40:41.643Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="zppOYXeTrH2jcMbO1RKh" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-20T04:08:34.064Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="tDgOOHxI-IDLS4HP69QV" version="20.0.1" type="github">
   <diagram id="nKixB-swxuelsMwNh83h" name="Page-1">
     <mxGraphModel dx="2500" dy="925" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -195,6 +195,24 @@
             <mxPoint x="330" y="1050" as="sourcePoint" />
             <mxPoint x="490" y="1050" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-65" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="1330" width="1470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-66" value="TuihoclaptrinhSingleton" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=25;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1400" width="480" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-67" value="- uniqueInstance: TuihoclaptrinhSingleton" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=25;fontStyle=4" vertex="1" parent="GCktm6jk6U1iaw8o4M6b-66">
+          <mxGeometry y="40" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-68" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=25;" vertex="1" parent="GCktm6jk6U1iaw8o4M6b-66">
+          <mxGeometry y="80" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-69" value="- TuihoclaptrinhSingleton(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=25;fontStyle=0" vertex="1" parent="GCktm6jk6U1iaw8o4M6b-66">
+          <mxGeometry y="110" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GCktm6jk6U1iaw8o4M6b-70" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;u&gt;+ getInstance(): TuihoclaptrinhSingleton&lt;/u&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="GCktm6jk6U1iaw8o4M6b-66">
+          <mxGeometry y="150" width="480" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
