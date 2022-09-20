@@ -4,28 +4,26 @@
 - Builder
 - Factory Method
 - Prototype
-- Singleton
-  - vd: co 1 class va chung ta chi muon co 1 va chi 1 instance cua class day trong application.
-	- dua cho no 1 quyen truy cap toan cuc.
-	- ung dung: . login
-		+ Luu lai lich su user, action user (chi can 1 object log, va chay bat ki dau cta muon,
-			va log ko anh huong den ung dung data nen xai an toan)
-			 . config
-		+ 1 ung dung chi can 1 collection config, nen xai singleton
-			 . caching
-		+ ca application cache ve 1 file
-			 . Global Resource
-	- problem: . ve viec multi threading
-	- vidu TuihoclatrinhSingleton:
-		+ private constructor dam bao chi co 1 tuihoclaptrinh tren doi thui
-		+ ham public static getInstance: return 1 tuihoclaptrinh singleton
-		+ co 2 - 3 cach tao ra singleton:
-		_ Tao thang: bat app len la chay luon
-			. uni = new TuihoclaptrinhSingleton()
-			. problems: vd tg ko su dung r sau 1 khoang tg moi sd thi bi lang phi resource
-			. solve: tao ra lazy loadding: chi khoi tao khi t su dung no
-			. chay qua check neu null thi new con k thi return;
-			. problems:  
+- **Singleton**: A class of which only a single instance can exist.
+  - *Ex*: I want one class just have one and only one instance of this class in application.
+  - Give private access modifier
+  - *apply*:
+  	- Login : Save history user, action user(have 1 object log, and run anywhere I want, and data applicaition unaffected by log so it's safe).
+  	- Config: 1 application needed 1 collection config, so suggest singleton.
+  	- Caching: All application cache in one file.
+  	- Global resource
+  - *problem*:
+        - Multi Threading
+  - *Ex2*: TuihoclaptrinhSingleton:
+        - Private Constructor make sure that just have one tuihoclaptrinh.
+        - function public static getInstance: return one tuihoclaptrinh singleton.
+        - 2 to 3 ways to create singleton:
+        	- Create directly: run application and run.
+        		- uni = new TuihoclaptrinhSingleton()
+        		- *problem*: first time I dont use this and lately I use it so it wasted resource.
+        		- *solve*: creating lazy loading: just create when I'm using.
+        	- Check if null => new else return;
+        	- *problem*: 
 ## 2. Structural Patterns
 - Adapter
 - Bridge
