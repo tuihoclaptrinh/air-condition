@@ -12,18 +12,17 @@
   	2. Config: 1 application needed 1 collection config, so suggest singleton.
   	3. Caching: All application cache in one file.
   	4. Global resource
-  - *problem*:
-    - Multi Threading
+  - *problem*: Multi Threading
   - *Ex2*: TuihoclaptrinhSingleton:
     1. Private Constructor make sure that just have one tuihoclaptrinh.
     2. function public static getInstance: return one tuihoclaptrinh singleton.
     3. 2 to 3 ways to create singleton:
     4. Create directly: run application and run.
-      1. uni = new TuihoclaptrinhSingleton()
-      2. *problem*: first time I dont use this and lately I use it so it wasted resource.
-      3. *solve*: creating lazy loading: just create when I'm using.
-        1. Check if null => new else return;
-        2. *problem*: 
+       - uni = new TuihoclaptrinhSingleton()
+       - *problem*: first time I dont use this and lately I use it so it wasted resource.
+       - *solve*: creating lazy loading: just create when I'm using.
+         1. Check if null => new else return;
+         2. *problem*: 
 ## 2. Structural Patterns
 - Adapter
 - Bridge
