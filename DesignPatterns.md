@@ -3,6 +3,18 @@ Creational Patterns
 <span style="color:blue">some *blue* text</span>
 <span style="color:red">some **This is Red Bold.** text</span>
 
+// resets
+s { text-decoration:none; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
+
+
+// colors
+s { color: green }
+em { color: blue }
+
+~~This is green~~
+_this is blue_
+
 Abstract Factory	Creates an instance of several families of classes
 Builder			Separates object construction from its representation
 Factory Method		Creates an instance of several derived classes
