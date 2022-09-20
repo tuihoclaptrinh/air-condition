@@ -8,22 +8,22 @@
   - *Ex*: I want one class just have one and only one instance of this class in application.
   - Give private access modifier
   - *apply*:
-  	- Login : Save history user, action user(have 1 object log, and run anywhere I want, and data applicaition unaffected by log so it's safe).
-  	- Config: 1 application needed 1 collection config, so suggest singleton.
-  	- Caching: All application cache in one file.
-  	- Global resource
+  	1. Login : Save history user, action user(have 1 object log, and run anywhere I want, and data applicaition unaffected by log so it's safe).
+  	2. Config: 1 application needed 1 collection config, so suggest singleton.
+  	3. Caching: All application cache in one file.
+  	4. Global resource
   - *problem*:
-        - Multi Threading
+    - Multi Threading
   - *Ex2*: TuihoclaptrinhSingleton:
-        - Private Constructor make sure that just have one tuihoclaptrinh.
-        - function public static getInstance: return one tuihoclaptrinh singleton.
-        - 2 to 3 ways to create singleton:
-        	- Create directly: run application and run.
-        		- uni = new TuihoclaptrinhSingleton()
-        		- *problem*: first time I dont use this and lately I use it so it wasted resource.
-        		- *solve*: creating lazy loading: just create when I'm using.
-        	- Check if null => new else return;
-        	- *problem*: 
+    1. Private Constructor make sure that just have one tuihoclaptrinh.
+    2. function public static getInstance: return one tuihoclaptrinh singleton.
+    3. 2 to 3 ways to create singleton:
+    4. Create directly: run application and run.
+      1. uni = new TuihoclaptrinhSingleton()
+      2. *problem*: first time I dont use this and lately I use it so it wasted resource.
+      3. *solve*: creating lazy loading: just create when I'm using.
+        1. Check if null => new else return;
+        2. *problem*: 
 ## 2. Structural Patterns
 - Adapter
 - Bridge
